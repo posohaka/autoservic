@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:hsqldb:file:/home/posohaka/hypersql/hsqldb-2.4.1/hsqldb/lib/data/auto
+    </property>
+    <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+    <property name="hibernate.connection.username">SA</property>
+    <property name="hibernate.connection.password">123</property>
+    <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <!-- Enable the logging of all the generated SQL statements to the console -->
+    <property name="show_sql">true</property>
+
+    <!-- Format the generated SQL statement to make it more readable, -->
+    <property name="format_sql">false</property>
+
+    <!-- Hibernate will put comments inside all generated SQL statements to
+     hint what’s the generated SQL trying to do -->
+    <property name="use_sql_comments">false</property>
+    <mapping class="com.haulmont.testtask.data.entities.ClientEntity"/>
+      <mapping class="com.haulmont.testtask.data.entities.MechanicEntity"/>
+      <mapping class="com.haulmont.testtask.data.entities.OrdersEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
