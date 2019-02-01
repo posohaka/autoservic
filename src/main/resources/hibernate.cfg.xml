@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url">jdbc:hsqldb:file:/home/posohaka/hypersql/hsqldb-2.4.1/hsqldb/lib/data/auto
+    <property name="connection.url">jdbc:hsqldb:file:./sql/data/auto
     </property>
     <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
     <property name="hibernate.connection.username">SA</property>
