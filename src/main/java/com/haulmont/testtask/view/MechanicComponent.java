@@ -329,7 +329,7 @@ public class MechanicComponent extends CustomComponent {
         horizontalLayoutSt.addComponent(verticalLayout1Plan);
         horizontalLayoutSt.addComponent(verticalLayout1Done);
         horizontalLayoutSt.addComponent(verticalLayout1Ok);
-        verticalLayout1Plan.addComponent(new Label("Количество апланированых заказов"));
+        verticalLayout1Plan.addComponent(new Label("Количество запланированых заказов"));
         verticalLayout1Plan.addComponent(new Label(String.valueOf(statistic.getCountPlan())));
         verticalLayout1Done.addComponent(new Label("Количество выполненых заказов"));
         verticalLayout1Done.addComponent(new Label(String.valueOf(statistic.getCountDone())));
